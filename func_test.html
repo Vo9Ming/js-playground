@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+</head>
+<body>
+    <h1>test</h1>
+    <script>
+        var foo = function(){
+            for(var i = 0; i < 10; i++){
+                for(var j = 0; j < 10; j++){
+                    console.log(i, j);
+                    if (i === 5 &&j === 3){
+                        //break;
+                        return;
+                    }
+                }
+            }
+        }
+        // break를 쓸 경우에는 반복문 하나만 빠져나온다. 
+        // 두개를 빠져나오고 싶다면 함수를 사용하면 된다!!!!
+
+        foo();
+    </script>
+</body>
+</html>
