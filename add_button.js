@@ -28,14 +28,9 @@ menu.appendChild(item2);
 //      <li>짜장면</li>
 //  </ul>
 
+var item3 = document.createElement("li");
+item3.innerHTML = "짬뽕";
+menu.appendChild(item3);
+
 test.appendChild(menu);
 // 기존의 엘리먼트에 자식으로 추가 할 수 있다.
-
-var readInput = function () {
-  var input = document.getElementById("input1");
-  console.log(input.value);
-};
-
-var btn1 = document.getElementById("btn1");
-// <button id ="btn1">확인</button>
-btn1.onclick = readInput;
